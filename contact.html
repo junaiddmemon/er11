@@ -126,7 +126,8 @@
         <div class="form-panel">
           <span class="label">Send a Message</span>
           <h2 class="title" style="font-size:clamp(1.35rem,2.5vw,1.75rem);margin-bottom:1.5rem;">Request a Consultation</h2>
-          <form id="contactForm">
+          <form id="contactForm" action="contact-submit.php" method="post" novalidate>
+            <div id="contactFormFeedback" class="form-feedback" hidden></div>
             <div class="form-group">
               <label for="contact-name">Full Name *</label>
               <input type="text" class="form-control" id="contact-name" name="name" required placeholder="Your full name">
